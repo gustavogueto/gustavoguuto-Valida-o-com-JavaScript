@@ -1,0 +1,100 @@
+/* style.css */
+
+/* 1. Reset Básico e Estilo do Corpo */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 2. Container Principal */
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* 3. Estilos do Formulário */
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+    position: relative; /* Importante para posicionar a mensagem de erro */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+input[type="text"], 
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* 4. Estilos do Botão */
+#btn-enviar {
+    background-color: #3498db; /* Azul primário */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#btn-enviar:hover {
+    background-color: #2980b9; /* Azul mais escuro no hover */
+}
+
+#btn-enviar:active {
+    transform: translateY(1px);
+}
+
+
+/* --- 5. Estilos de Validação (Foco da Aula) --- */
+
+/* Estilo para campos inválidos */
+.campo-grupo input.invalido {
+    border-color:
